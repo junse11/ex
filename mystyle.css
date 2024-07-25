@@ -1,0 +1,63 @@
+body{
+    height: 100px;
+    background-image: url("../img/KakaoTalk_20240106_184620103.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    padding: 50px 0;
+}
+
+.container .heros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container .heros .hero {
+    width: 80px;
+    height: 84px;
+    margin: 4px;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: gray;
+    overflow: hidden;  /* 박스보다 큰게 들어오면 숨김*/
+    transform: skewX(-14deg); /* 박스 기울이기*/
+    
+}
+
+.container .heros .hero:hover{
+    background-color: yellow;
+    z-index:1;
+    transform: scale(1.4) skewX(-14deg);
+    
+
+}
+
+.container .heros .hero .image{
+    width: 140%;
+    height: 100%;
+    background-position: left;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    
+}
+
+.container .heros .hero:nth-child(n) .image {background-image: url(../img/KakaoTalk_20240106_184620103_01.jpg)}
+
+.container .logo{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container .logo img{
+    width: 100%;
+    background-position: center;
+    
+}
